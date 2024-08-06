@@ -1,0 +1,9 @@
+PUT http://localhost:3003/api/blogs/6683e4282ed3943ee0da766b
+Content-Type: application/json
+
+ {
+    "title": "CHANGED BLOG",
+    "author": "John Doe II",
+    "url": "www.bloglisttest.fi",
+    "likes": 101
+}
