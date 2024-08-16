@@ -24,24 +24,27 @@ const BlogForm = ({ createBlog }) => {
         title
         <input
           value={newTitle}
-          onChange={event => setNewTitle(event.target.value)}/><br></br>
+          onChange={event => setNewTitle(event.target.value)}
+          id='title'/><br></br>
         author
         <input
           value={newAuthor}
-          onChange={event => setNewAuthor(event.target.value)}/><br></br>
+          onChange={event => setNewAuthor(event.target.value)}
+          id='author'/><br></br>
         url
         <input
           value={newUrl}
-          onChange={event => setNewUrl(event.target.value)}/><br></br>
+          onChange={event => setNewUrl(event.target.value)}
+          id='url'/><br></br>
       </div>
       <div>
-        <button type='submit'>create</button>
+        <button id='submit-button' type='submit'>create</button>
       </div>
     </form>
   )
 }
 
-BlogFrom.propTypes = {
+BlogForm.propTypes = {
   createBlog: PropTypes.func.isRequired
 }
 
